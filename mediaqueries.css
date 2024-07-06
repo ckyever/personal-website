@@ -86,12 +86,16 @@
     flex-wrap: wrap;
   }
 
+  .contact-info-upper-container {
+    gap: 10px;
+  }
+
   .contact-info-container {
     margin: 0;
   }
 
   .contact-info-container p, .nav-links li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .experience-sub-title {
