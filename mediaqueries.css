@@ -143,4 +143,9 @@
   .menu-links.open a {
     padding-left: 5rem;
   }
+
+  .source-code {
+    margin-top: 4rem;
+    font-size: 0.8rem;
+  }
 }
