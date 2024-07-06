@@ -44,12 +44,12 @@
         <h1 class="title">Ckyever Gaviola</h1>
         <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf', '__blank')">Download CV</button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/ckyever'"/>
-          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ckyever'"/>
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://linkedin.com/in/ckyever', '__blank')"/>
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/ckyever', '__blank')"/>
         </div>
       </div>
     </section>
@@ -88,7 +88,6 @@
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -191,7 +190,6 @@
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -204,7 +202,7 @@
             </div>
             <h2 class="experience-sub-title project-title">Homecare</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ckyever/Portugal_Homecare'">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ckyever/Portugal_Homecare', '__blank')">
                 Github
               </button>
             </div>
@@ -215,7 +213,7 @@
             </div>
             <h2 class="experience-sub-title project-title">Watch Your Back AI</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ckyever/AI_Project_PartB'">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ckyever/AI_Project_PartB', '__blank')">
                 Github
               </button>
             </div>
@@ -226,14 +224,13 @@
             </div>
             <h2 class="experience-sub-title project-title">TLS Checker</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ckyever/TLS_Certificate_Checker'">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ckyever/TLS_Certificate_Checker', '__blank')">
                 Github
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -253,11 +250,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#desktop-nav">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#desktop-nav">Back To Top</a></li>
           </ul>
         </div>
       </nav>
