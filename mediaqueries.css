@@ -87,6 +87,9 @@
     flex-wrap: wrap;
   }
 
+  .section-container {
+    margin-top: 2rem;
+  }
   .contact-info-upper-container {
     gap: 10px;
   }
