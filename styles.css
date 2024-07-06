@@ -205,8 +205,16 @@ section {
 
 /* Icons */
 .icon {
-  cursor: pointer;
   height: 2rem;
+}
+
+.link-icon {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.link-icon:hover {
+  opacity: 1;
 }
 
 /* Buttons */
