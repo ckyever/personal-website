@@ -305,6 +305,10 @@ section {
   color: rgb(85, 85, 85);
 }
 
+.tech-stack {
+  margin-top: 0.5rem;
+}
+
 .section-container {
   display: flex;
   justify-content: center;
