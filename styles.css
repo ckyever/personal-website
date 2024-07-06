@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -11,7 +11,7 @@ body {
   margin: 0;
   background-color: white;
   color: black;
-  font-family: "Nunito", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 html {
