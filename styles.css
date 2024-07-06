@@ -176,12 +176,19 @@ section {
 }
 
 .section__text__p1 {
+  font-size: 1.30rem;
   text-align: center;
 }
 
+#name {
+  font-size: 4rem;
+}
+
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .title {
@@ -280,8 +287,8 @@ section {
 }
 
 .work-experience-list li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   list-style: none;
 }
 
