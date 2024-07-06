@@ -250,18 +250,20 @@ section {
   position: relative;
 }
 
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
 .about-containers {
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers, .about-details-container {
+.about-containers {
   display: flex;
 }
 
@@ -275,7 +277,7 @@ section {
   text-align: center;
 }
 
-.text-container li {
+.work-experience-list li {
   margin-top: 1rem;
   margin-bottom: 1rem;
   list-style: none;
@@ -287,6 +289,8 @@ section {
 }
 
 .section-container {
+  display: flex;
+  justify-content: center;
   gap: 4rem;
   height: 20%;
 }

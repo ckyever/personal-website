@@ -57,6 +57,10 @@
   .details-container {
     max-width: 440px;
   }
+
+  .work-experience-list li {
+    max-width: 600px;
+  }
 }
 
 @media screen and (max-width: 600px) {
