@@ -50,6 +50,15 @@
   }
 }
 
+@media screen and (min-width: 600px) {
+  .about-containers {
+    justify-content: center;
+  }
+  .details-container {
+    max-width: 440px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact, footer {
     height: 40vh;
