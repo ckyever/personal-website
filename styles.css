@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
+:root  {
+  --main-grey: #555555;
+  --secondary-grey: #353535;
+  --light-grey: #a3a3a3;
+  --off-white: #fafafa;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +26,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--main-grey);
 }
 
 a, .btn {
@@ -235,7 +242,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--secondary-grey) 0.1rem solid;
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -243,12 +250,12 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: var(--secondary-grey);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: black;
 }
 
 .btn-color-2 {
@@ -256,7 +263,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: white 0.1rem solid;
 }
 
 .btn-container {
@@ -290,8 +297,8 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--secondary-grey) 0.1rem solid;
+  border-color: var(--light-grey);
   text-align: center;
 }
 
@@ -302,7 +309,7 @@ section {
 
 .text-container i {
   align-items: right;
-  color: rgb(85, 85, 85);
+  color: var(--main-grey);
 }
 
 .tech-stack {
@@ -322,7 +329,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: var(--main-grey);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -360,8 +367,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--light-grey);
+  background: var(--off-white);
 }
 
 .project-img {
@@ -377,7 +384,7 @@ article .icon {
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border-color: var(--light-grey);
 }
 
 /* Contact Section */
@@ -392,8 +399,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--secondary-grey) 0.1rem solid;
+  border-color: var(--light-grey);
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
