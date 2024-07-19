@@ -195,9 +195,33 @@ section {
 
 .section__text__p2 {
   font-size: 1.25rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#typewriter {
+  display: block;
+}
+
+.cursor {
+  width: 2px;
+  height: 20px;
+  margin-bottom: -4px;
+  overflow: hidden;
+  background-color: var(--accent-colour);
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: var(--accent-colour);
+    }
 }
 
 .title {
