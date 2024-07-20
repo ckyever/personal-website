@@ -15,10 +15,10 @@ function typeWriter() {
   var textJitter = Math.floor(Math.random() * (70 - 45) + 45);
 
   if (reverse) {
-    if (document.getElementById("text").innerHTML.length > textBase.length) {
+    if (document.getElementById("summary-text").innerHTML.length > textBase.length) {
       // We're still in the process of removing the job
-      document.getElementById("text").innerHTML = document
-        .getElementById("text")
+      document.getElementById("summary-text").innerHTML = document
+        .getElementById("summary-text")
         .innerHTML.slice(0, -1);
       setTimeout(typeWriter, textJitter);
     } else {
@@ -36,7 +36,7 @@ function typeWriter() {
     } else {
       // Write text like a typewriter
       if (i < (textBase + roles[roleIndex]).length) {
-        document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + (
+        document.getElementById("summary-text").innerHTML = document.getElementById("summary-text").innerHTML + (
           textBase + roles[roleIndex]
         ).charAt(i);
         i++;
