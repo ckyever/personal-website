@@ -5,42 +5,38 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-let roles = ["software engineer", "problem solver", "programmer"];
+const roles = ["software engineer", "problem solver", "programmer"];
+const timeoutBetweenTypingRoles = 2000;
+
 let roleIndex = 0;
-let i = 0;
-let reverse = false;
+let stringIndex = 0;
+let isTyping = true;
 
 function typeWriter() {
-  var textJitter = Math.floor(Math.random() * (70 - 45) + 45);
+  // Random timeout value to emulate human typing
+  const textJitter = Math.floor(Math.random() * (70 - 45) + 45);
 
-  if (reverse) {
-    if (document.getElementById("text").innerHTML.length > 0) {
-      // We're still in the process of deleting
-      document.getElementById("text").innerHTML = document
-        .getElementById("text")
-        .innerHTML.slice(0, -1);
-      setTimeout(typeWriter, textJitter);
+  if (isTyping) {
+    if (stringIndex === roles[roleIndex].length) {
+      stringIndex = 0
+      isTyping = false;
+      setTimeout(typeWriter, timeoutBetweenTypingRoles);
     } else {
-      // Deleting done, set next role and repeat
-      roleIndex = (roleIndex + 1) % roles.length;
-      reverse = false;
-      setTimeout(typeWriter, 0);
-    }
-  } else {
-    if (i === roles[roleIndex].length) {
-      // Line is done wait and then reverse
-      i = 0
-      reverse = true;
-      setTimeout(typeWriter, 2000);
-    } else {
-      // Write text like a typewriter
-      if (i < roles[roleIndex].length) {
-        document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + (
-          roles[roleIndex]
-        ).charAt(i);
-        i++;
+      if (stringIndex < roles[roleIndex].length) {
+        document.getElementById("role-text").innerHTML += (roles[roleIndex]).charAt(stringIndex);
+        stringIndex++;
         setTimeout(typeWriter, textJitter);
       }
+    }
+  } else {
+    // Backspacing
+    if (document.getElementById("role-text").innerHTML.length > 0) {
+      document.getElementById("role-text").innerHTML = document.getElementById("role-text").innerHTML.slice(0, -1);
+      setTimeout(typeWriter, textJitter);
+    } else {
+      roleIndex = (roleIndex + 1) % roles.length;
+      isTyping = true;
+      setTimeout(typeWriter, 0);
     }
   }
 }
