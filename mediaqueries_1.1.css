@@ -13,6 +13,7 @@
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
     justify-content: flex-end;
@@ -54,6 +55,7 @@
   .about-containers {
     justify-content: center;
   }
+
   .details-container {
     max-width: 440px;
   }
