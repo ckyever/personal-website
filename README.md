@@ -1,2 +1,2 @@
-# Personal Portfolio
-Website to display my work experience and recent projects.
+# Personal Website
+Portfolio of my work experience and projects.
